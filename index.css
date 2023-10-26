@@ -1,76 +1,93 @@
-body{
-    background-color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    vertical-align: middle;
-    background: rgb(166,201,236);
-    background: linear-gradient(90deg, rgba(166,201,236,1) 0%, rgba(224,200,231,1) 52%, rgba(164,196,228,1) 100%);
+body {
+  background-color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  vertical-align: middle;
+  background: rgb(166, 201, 236);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 201, 236, 1) 0%,
+    rgba(224, 200, 231, 1) 52%,
+    rgba(164, 196, 228, 1) 100%
+  );
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(223, 236, 240);
-    width: 30vw;
-
-    padding-top: 5em;
-    border:2px solid rgb(187, 187, 210);
-    border-radius: 2em;
-    margin: auto;
-    margin-top: 5em;
+h3 {
+  text-align: center;
 }
 
-img{
-    border-radius: 50%;
-    border: 1px dashed rgb(120, 119, 158);
-    border-style: groove;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(223, 236, 240);
+  width: 30vw;
+
+  padding: 1rem;
+  border: 2px solid rgb(187, 187, 210);
+  border-radius: 2em;
+  margin: auto;
+  margin-top: 5em;
 }
 
-img:hover{
-    transform: scale(1.1);
-    
-    
+img {
+  border-radius: 50%;
+  border: 1px dashed rgb(120, 119, 158);
+  border-style: groove;
+  transition: 0.6s;
 }
 
-p{
-    font-weight: bold;
-    font-size: 1.8em;
+img:hover {
+  transform: scale(1.1);
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    
+h1 {
+  font-weight: bold;
+  font-size: 1.8em;
+  text-align: center;
 }
 
-.button{
-    text-decoration: none;
-    background-color:azure;
-    font-size: 1.2em;
-    vertical-align: middle;
-    border-radius: 2em;
-    border: 1px solid gray;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-
-    margin-bottom: 1em;
-    width: 100%;
-    height: 1.4em;
+section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.button {
+  text-decoration: none;
+  background-color: azure;
+  font-size: 1.2em;
+  border-radius: 2em;
+  border: 1px solid gray;
+
+  margin-bottom: 1em;
+  width: 100%;
+  height: 2.3rem;
 }
 
-.button:hover{
-    background-color:rgb(197, 209, 219);
+section > div > .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: rgb(197, 209, 219);
+  cursor: pointer;
 }
 
 @media only screen and (max-device-width: 900px) {
-    main{
-        width: 100%;
-    }
-    }
+  main {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+}

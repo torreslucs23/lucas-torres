@@ -14,7 +14,7 @@ main{
     width: 30vw;
 
     padding-top: 5em;
-    border:2px solid rgb(8, 8, 22);
+    border:2px solid rgb(187, 187, 210);
     border-radius: 2em;
     margin: auto;
     margin-top: 5em;
@@ -22,7 +22,7 @@ main{
 
 img{
     border-radius: 50%;
-    border: 1px dashed black;
+    border: 1px dashed rgb(120, 119, 158);
     border-style: groove;
 }
 
